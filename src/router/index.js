@@ -2,13 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import index from '@/components/index'
+import phone from '@/components/phone'
+import myself from '@/components/myself'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
     },
@@ -16,6 +18,16 @@ export default new Router({
       path: '/index',
       name: 'index',
       component: index
+    },
+    {
+      path: '/phone',
+      name: 'phone',
+      component: phone
+    },
+    {
+      path: '/',
+      name: 'myself',
+      component: myself
     }
   ]
 })
