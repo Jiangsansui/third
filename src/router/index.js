@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import index from '@/components/index'
 import phone from '@/components/phone'
 import myself from '@/components/myself'
+import work from '@/components/work'
 
 Vue.use(Router)
 
@@ -28,6 +29,12 @@ export default new Router({
       path: '/',
       name: 'myself',
       component: myself
+    },
+    {
+      path: '/work',
+      name: 'work',
+      component: work
     }
+
   ]
 })
