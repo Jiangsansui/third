@@ -3,8 +3,10 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import index from '@/components/index'
 import phone from '@/components/phone'
-import myself from '@/components/myself'
-import work from '@/components/work'
+import wd from '@/components/wd'
+import gzrw from '@/components/gzrw'
+import first from '@/components/first'
+import second from '@/components/second'
 
 Vue.use(Router)
 
@@ -26,15 +28,25 @@ export default new Router({
       component: phone
     },
     {
-      path: '/',
-      name: 'myself',
-      component: myself
+      path: '/wd',
+      name: 'wd',
+      component: wd
     },
     {
-      path: '/work',
-      name: 'work',
-      component: work
-    }
+      path: '/',
+      name: 'gzrw',
+      component: gzrw
+    },
+    {
+      path: '/first',
+      name: 'first',
+      component: first
+    },
+    {
+      path: '/second',
+      name: 'second',
+      component: second
+    },
 
   ]
 })
